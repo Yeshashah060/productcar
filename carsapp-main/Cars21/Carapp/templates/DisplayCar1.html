@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body><center>
+	<h1>DISPLAY CARS DETAILS</h1>
+<table border="1px">
+	<tr>
+		<td>Car Name</td>
+		<td>Car price</td>
+		<td>Car Model</td>
+		<td>Company</td>
+		<td>Color</td>
+	</tr>
+	{% for d in data %}
+	<tr>
+		<td>{{d.cname}}</td>
+		<td>{{d.cprice}}</td>
+		<td>{{d.cmodel}}</td>
+
+		<td>{{d.ccompany}}</td>
+		<td>{{d.color}}</td>
+	</tr><br>
+	{% endfor %}
+</table>
+<button><a href="/">Home</button>
+</center>
+</body>
+</html>
